@@ -28,7 +28,7 @@
         <td><%= schedule.date_end.to_s(:date_jp) %></td>
         <td><%= schedule.whole_day %></td>
         <td><%= schedule.updated_at.to_s(:datetime_jp) %></td>
-        <td>詳細</td>
+        <td><%= link_to "詳細", schedule_path(schedule) %></td>
         <td>編集</td>
         <td>削除</td>
       </tr>
