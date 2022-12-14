@@ -42,6 +42,7 @@
   <ul>
     <li><%= link_to "一覧へ戻る", schedules_path %></li>
     <li><%= link_to "編集する", edit_schedule_path(@schedule) %></li>
-    <li>削除する</li>
+    <li><%= link_to "削除する", schedule_path(@schedule), method: :delete,
+      data: {confirm: "本当に削除しますか？"} %></li>
   </ul>
 </div>
