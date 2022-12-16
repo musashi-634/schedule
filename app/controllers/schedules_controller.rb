@@ -6,7 +6,7 @@ class SchedulesController < ApplicationController
   def new
     @schedule = Schedule.new
   end
-  
+
   def create
     @schedule = Schedule.new(params.require(:schedule).permit(
       :title, :date_start, :date_end, :whole_day, :memo))
