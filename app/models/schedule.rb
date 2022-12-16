@@ -3,7 +3,7 @@ class Schedule < ApplicationRecord
   validates :date_start, presence: true
   validates :date_end, presence: true
   validate :check_dates_relation
-  validates :whole_day, inclusion: {in: ["○", nil]}
+  validates :whole_day, inclusion: {in: ["○", ""]}
 
   def check_dates_relation
     unless self.date_start.nil? || self.date_end.nil?  # 両方の日付が空白でない場合
