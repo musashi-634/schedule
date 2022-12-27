@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+}
+
+header {
+  background-color: coral;
+  padding: 30px 10px;
+}
+
+main {
+  padding: 0 10px;
+}
+
+footer {
+  background-color: coral;
+  padding: 0 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+table th {
+  background-color: #fbc25b;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #f9ecd5;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.notice {
+  background-color: palegreen;
+}
+
+.alert {
+  background-color: salmon;
+}
